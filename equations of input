@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c,x;
+    if(!(cin>>a>>b>>c)) return 0;
+    x=a+b*5/4+c%3*5;
+    cout<<"x= "<<x<<endl;
+    int u,v,y;
+    if(cin>>u>>v);
+    y=u>v;
+    cout<<"y= "<<y<<endl;
+    int i,j,k,z;
+    if(!(cin>>i>>j>>k)) return 0;
+    z=++i&&++j&&++k;
+    cout<<"z= "<<z<<endl;
+}
