@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    if(a==60&&b==60&&c==60){
+        cout<<"Prize 3"<<endl;
+    }
+    else if(a==90 && b==45 && c==45){
+        cout<<"Prize 2"<<endl;
+    }
+    else if (a==80 && b==60 && c==40){
+        cout<<"Prize 1"<<endl;
+    }
+    else{
+        cout<<"No Prize"<<endl;
+    }
+    return 0;
+}
