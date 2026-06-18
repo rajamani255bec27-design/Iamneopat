@@ -1,0 +1,15 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    int i,len,Zero=0,One=0;
+    char a[20];
+    cin>>a;
+    len=strlen(a);
+    for(i=0;i<len;i++){
+        if(a[i]==48){Zero++;}
+        else{One++;}
+    }
+    ((Zero==1)||(One==1))?cout<<"Yes":cout<<"No";
+    return 0;
+}
