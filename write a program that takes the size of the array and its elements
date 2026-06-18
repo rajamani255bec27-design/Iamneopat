@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int size;
+    cin>>size;
+    if(size>10||size<=0){
+        cout<<"Invalid";
+        return 0;
+    }
+    int current;
+    cin>>current;
+    int maxval=current;
+    int minval=current;
+    for(int i=0;i<size;i++){
+        cin>>current;
+        if(current>maxval){
+            maxval=current;
+        }
+        if(current<minval){
+            minval=current;
+        }
+    }
+    cout<<"Max:"<<maxval<<endl;
+    cout<<"Min:"<<minval;
+    return 0;
+}
