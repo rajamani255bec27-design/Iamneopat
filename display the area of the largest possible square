@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int side,tiles;
+    if(!(cin>>side>>tiles)) return 0;
+    int sideintiles=sqrt(tiles);
+    int totalside=sideintiles*side;
+    int maxarea=totalside*totalside;
+    cout<<"Area of the largest possible square is"<<maxarea<<"sqcm.";
+    return 0;
+}
