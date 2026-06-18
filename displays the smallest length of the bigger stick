@@ -1,0 +1,20 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    int n;
+    if(!(cin>>n))return 0;
+    int totallength=0;
+    for(int i=0;i<n;i+=2){
+        int stick1,stick2;
+        cin>>stick1>>stick2;
+        if(stick1<stick2){
+            totallength+=stick1;
+        }else{
+            totallength+=stick2;
+        }
+    }
+    cout<<totallength;
+    return 0;
+    
+}
