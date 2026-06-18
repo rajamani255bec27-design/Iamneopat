@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int reverse(int n){
+    int reversedNumber=0;
+    while(n != 0){
+        int lastDigit=n%10;
+        reversedNumber=(reversedNumber*10)+lastDigit;
+        n/10;
+    }
+    return reversedNumber;
+}
+int main(){
+    int n;
+    if(cin>>n){
+        cout<<reverse(n);
+    }
+    return 0;
+}
