@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,k;
+    if(!(cin>>n)) return 0;
+    for(int i=1;i<=n;++i){
+        if(i%2 !=0){
+            int k=(i+1)/2;
+            cout<<30+4*k*(k-1);
+        }
+        else{
+            int k=i/2;
+            cout<<35+3*k*(k-1);
+        }
+        if(i<n) cout<<" ";
+    }
+    return 0;
+}
