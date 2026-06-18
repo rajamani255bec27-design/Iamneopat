@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int fact(int n){
+    int result=1;
+    for(int i=1;i<=n;i++){
+        result*=i;
+    }
+    return result;
+}
+int main(){
+    int n;
+    if(!(cin>>n)){
+        return 0;
+    }
+    if(n>0&&n<=10){
+        cout<<"Factorial:"<<fact(n)<<endl;
+    }
+    else{
+        cout<<"Invalid"<<endl;
+    }
+    return 0;
+}
