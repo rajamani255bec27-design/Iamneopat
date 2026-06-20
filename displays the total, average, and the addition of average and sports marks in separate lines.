@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+class Student{
+    protected:
+       string name;
+       int id;
+    public:
+       void getDetails(){
+           cin>>id;
+           cin>>name;
+       }
+};
+class Marks:public Student{
+    protected:
+       int mark1,mark2,mark3;
+    public:
+       void getMarks(){
+           cin>>mark1>>mark2>>mark3;
+       }
+       int total(){
+           return mark1+mark2+mark3;
+       }
+       float average(){
+           return(float)total()/3.0;
+       }
+};
+class sports{
+    protected:
+      int sportsMark;
+    public:
+      void getsportMark(){
+          cin>>sportsMark;
+      }
+};
+class Result:public Marks,public sports{
+    public:
+       void display(){
+           cout<<"Total Marks:"<<total()<<endl;
+           cout<<"Average Marks:"<<average()<<endl;
+           cout<<"Total score:"<<average()+sportsMark<<endl;
+       }
+};
+int main(){
+    Result r;
+    r.getDetails();
+    r.getMarks();
+    r.getsportMark();
+    r.display();
+    return 0;
+}
