@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Vehicle{
+    public:
+          float dist,tim;
+          void fetchData()
+          {
+              cin>>dist>>tim;
+          }
+};
+class Car:public Vehicle
+{
+    float spd;
+public:
+    void calc()
+    {
+        spd=dist/tim;
+    }
+    void display()
+    {
+        cout<<"Speed of car:"<<spd<<"km/hr";
+    }
+};
+int main(){
+    Car c;
+    c.fetchData();
+    c.calc();
+    c.display();
+    return 0;
+}
